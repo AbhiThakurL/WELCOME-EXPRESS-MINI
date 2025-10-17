@@ -1,0 +1,31 @@
+<div class="categories">
+    <h2>Selected Brands</h2>
+
+    <% const categories = [
+        {
+            name: "fashion",
+            img: "https://cdn.prod.website-files.com/63cffb7c16ab33a28e9734f2/63d15ac4f646b6779ab57215_project-01-p-800.webp"
+        },
+        {
+            name: "noise",
+            img: "https://cdn.prod.website-files.com/63cffb7c16ab33a28e9734f2/63d15f3d8f74d76a8617d4da_project-02-p-800.webp"
+        },
+        {
+            name: "lawyers",
+            img: "https://cdn.prod.website-files.com/63cffb7c16ab33a28e9734f2/63d15f44a1b82fb1c8aa4ee2_project-03-p-800.webp"
+        },
+        {
+            name: "flowers",
+            img: "https://cdn.prod.website-files.com/63cffb7c16ab33a28e9734f2/63d15f513ad5ecfa6838003e_project-04-p-800.webp"
+        }
+    ]; %>
+
+    <div class="category-grid">
+        <% categories.forEach(cat => { %>
+            <div class="category-item">
+                <img src="<%= cat.img %>" alt="<%= cat.name %> image">
+                <h3><%= cat.name %></h3>
+            </div>
+        <% }) %>
+    </div>
+</div>

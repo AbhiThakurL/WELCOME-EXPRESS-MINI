@@ -1,0 +1,25 @@
+{
+  "name": "chapter-a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.mjs",
+    "start:dev": "nodemon ./src/index.mjs",
+    "GOOT": "nodemon ./src/index.mjs",
+    "sass": "sass src/public/css/style.scss src/public/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "sass": "^1.93.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

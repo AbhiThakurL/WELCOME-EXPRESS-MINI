@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="logo">
+          <span>ALVY</span>
+        </div>
+
+        <nav class="nav">
+          <div class="card">
+            <h1>Cart <span>0</span></h1>
+          </div>
+
+          <div class="menu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </header>
+
+      <section class="Hero">
+        <div class="Hero-text">
+          <h1>
+            Fashion <br />
+            & Branding
+          </h1>
+          <p>
+            Bringing Your Fashion Brand's Unique Identity to Life Through
+            Strategic Marketing and Advertising.
+          </p>
+        </div>
+      </section>
+
+      <section class="branding-section">
+        <% branding.forEach(card => { %> <%-
+        include('partials/BrandingDesgin/Branding', card) %> <% }) %>
+      </section>
+
+      <section class="branding-logo">
+        <%- include("partials/SiteLogo/SiteLogo") %>
+      </section>
+
+      <section class="branding-about">
+        <%- include("partials/BrandingAbout/BrandingAbout.ejs") %> <%-
+        include("partials/BrandingAbout/BrandingList/BrandingList") %>
+      </section>
+
+      <section class="brands-section">
+        <%- include("partials/Brands/Brands") %>
+
+        <div class="contact-section">
+          <h6>Contact</h6>
+          <h2>Let's make your fashion brand shine</h2>
+
+          <button>Get in Touch</button>
+        </div>
+      </section>
+
+      <section class="scroll-banner">
+        <div class="scroll-content">
+          <h1>Follow us on Social Media</h1>
+          <h1>Follow us on Social Media</h1>
+          <h1>Follow us on Social Media</h1>
+          <h1>Follow us on Social Media</h1>
+        </div>
+      </section>
+
+      <section>
+
+      </section>
+    </div>
+  </body>
+</html>
