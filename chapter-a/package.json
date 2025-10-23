@@ -8,7 +8,10 @@
     "start": "nodemon ./src/index.mjs",
     "start:dev": "nodemon ./src/index.mjs",
     "GOOT": "nodemon ./src/index.mjs",
-    "sass": "sass src/public/css/style.scss src/public/css/style.css --watch"
+    "sass": "sass src/public/css/style.scss src/public/css/style.css --watch",
+    "backend": "nodemon ./src/index.mjs",
+    "sass-watch": "sass src/view/css/style.scss src/view/css/style.css --watch",
+    "dev": "run-p backend sass-watch"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +23,7 @@
     "sass": "^1.93.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "npm-run-all": "^4.1.5"
   }
 }

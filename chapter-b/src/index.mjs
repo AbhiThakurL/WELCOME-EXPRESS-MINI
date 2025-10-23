@@ -183,6 +183,29 @@ app.patch("/store/:update",(request,response)=>{
   })
 })
 
+app.delete("/store/:deleteID",(request,response)=>{
+
+  const { params:{deleteID}} = request;
+  const id = parseInt(deleteID)
+
+  if(isNaN(deleteID)) return response.status(404).json({error:"Not Found Page "})
+
+  const FindByID = data.findIndex((idx)=>idx.id === id)
+  if(FindByID === -1) return response.status(404).json( {message:"Not Found Id"})
+
+  data.splice(FindByID,1)
+
+  console.log(FindByID)
+
+
+
+  return response.status(200).json({
+    message:"Complete Delete Data Not Recycle Data ."
+  })
+
+})
+
+
 
 app.listen(PORT, () => {
   console.log(`Running Server ${PORT}`);

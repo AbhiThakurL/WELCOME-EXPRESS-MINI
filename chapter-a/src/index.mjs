@@ -27,24 +27,6 @@ app.get('/', (req, res) => {
 });
 
 // server.js (Express)
-app.get('/social', (req, res) => {
-  const cards = [
-    {
-      platformName: 'Instagram',
-      description: "Captivating visuals that showcase our fashion brand's unique style and story.",
-      link: 'https://instagram.com',
-      platformIcon: '<i class="fa-brands fa-instagram"></i>'
-    },
-    {
-      platformName: 'Twitter',
-      description: "Join the conversation and see what’s trending in our world.",
-      link: 'https://twitter.com',
-      platformIcon: '<i class="fa-brands fa-x-twitter"></i>'
-    }
-  ];
-
-  res.render('./views/partials/SocialMedio/SocailMedia', { cards });
-});
 
 
 // Start server
